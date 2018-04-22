@@ -10,7 +10,11 @@
 <body>
 <!-- nav bar --> 
   <nav class="navbar">
-    <div id="home-link"><a href="#home-link"></a></div>  
+    <div id="home-link"><a href="index.html"></a></div>  
+    <ul class="icon-list">
+      <li class="github-icon icon"><a href="https://github.com/catsinspacesuits"></a></li>
+      <li class="linkedin-icon icon"><a href="#"></a></li>
+    </ul>
     <ul>
       <li id="about-link"><a href="#about-section">About</a></li>
       <li id="projects-link"><a href="#projects-section">Projects</a></li>
@@ -23,26 +27,84 @@
 		<img src="layer2.png" class="layer" id="layer-two"></img>
 		<img src="layer3.png" class="layer" id="layer-three"></img>
 		<img src="layer4.png" class="layer" id="layer-four"></img>
+		<div id="sun"></div>
+		<div id="parallax-background"></div>
 		<!-- <div id="layer-one" class="layer"></div>
 		<div id="layer-two" class="layer"></div>
 		<div id="layer-three" class="layer"></div>
 		<div id="layer-four" class="layer"></div> -->
 	</div>
 
-	<div id="about-section">
-		<h2>About Me</h2>
-	</div>
+	<header>
+		<h1>Scott Munro<br>Web Developer</h1>
+	</header>
 
-	<div id="projects-section">
-		<h2>Projects</h2>
-	</div>
+	<div class="section-container">
+		<section id="about-section">
+			<h2>About Me</h2>
 
-	<div id="contact-section">
-		<h2>Get in Touch</h2>
+	    <div id="head" class="about-box">
+	      <img src="img/8bit_head.jpg" alt="head" class="responsive">
+	    </div>
+
+	    <div id="about-intro" class="about-box">
+	      <h3>Introduction</h3>
+	      <p>Lorem ipsum dolor sit amet, probatus maiestatis duo te, purto antiopam est eu. Mucius meliore prodesset eos no, liber deseruisse his at, quem inani graecis ut quo.</p>
+	    </div>
+
+	    <div id="about-skills" class="about-box">
+	      <h3>My Skills</h3>  
+	      <ul id="skill-list">
+	        <li>HTML5</li>  
+	        <li>CSS3</li>
+	        <li>SASS</li>
+	        <li>Bootstrap</li>
+	        <li>JavaScript</li>
+	        <li>jQuery</li>
+	        <li>Ruby</li>
+	        <li>Rails</li> 
+	        <li>Responsive Web Design</li>
+	        <li>Git</li>
+	      </ul>
+	    </div>
+
+	    <div id="about-main">
+	      <h3>More About Me</h3>
+	      <p>Lorem ipsum dolor sit amet, ei augue semper liberavisse vis, mea porro tractatos et. Porro aliquando rationibus nec et. Per ullum bonorum utroque ne. Qui at quodsi apeirian assentior. Sit ex alii labores posidonium. Eos everti platonem persequeris ex. Sonet exerci sed in, ut nam quis noster option, duo cu maiorum perpetua consulatu. Detraxit electram consulatu id eos, pro graeci nemore persecuti at. Utinam postea ocurreret pri ex, eos ut vide intellegat. Commune atomorum ex cum.Qui at quodsi apeirian assentior. Sit ex alii labores posidonium. Eos everti platonem persequeris ex. Sonet exerci sed in, ut nam quis noster option, duo cu maiorum perpetua consulatu. Detraxit electram consulatu id eos, pro graeci nemore persecuti at. Utinam postea ocurreret pri ex, eos ut vide intellegat. Commune atomorum ex cum. </p>
+	    </div>
+
+	    
+	    <a id="button" href="cv.pdf" download>Download CV
+	    	<div id="file-icon"></div>
+	    </a>
+	    	
+
+		</section>
+
+		<section id="projects-section">
+			<h2>Projects</h2>
+			 <div class="project">Project 1</div>
+			 <div class="project">Project 2</div>
+			 <div class="project">Project 3</div>
+			 <div class="project">Project 4</div>
+		</section>
+
+		<section id="contact-section">
+			<h2>Get in Touch</h2>
+			<form action="https://formspree.io/simunro@hotmail.co.uk" method="POST">
+		    <label>Name: </label>
+		    <input type="text" name="name"><br>
+		    <label>Email: </label>
+		    <input type="email" name="_replyto"><br>
+		    <label>Message: </label>
+		    <textarea placeholder="Please leave your message here..." required></textarea><br>
+		    <input type="submit" value="Send" id="send-button">
+			</form>
+		</section>
 	</div>
 
 	<footer>
-	  <div class="copyright"><p>&copyScott Munro 2017</p></div> 
+	  <div class="copyright"><p>&copyScott Munro 2018</p></div> 
 	</footer>
 
 

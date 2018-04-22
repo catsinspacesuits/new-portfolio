@@ -3,22 +3,23 @@ $(document).ready(function () {
     var scrollorama = $.scrollorama({
         blocks: '.scrolling'
     });
+     
     scrollorama.animate('#layer-one', {
-        delay: 0, duration: 600, property: 'top', start: -270, end: -800
+        delay: 0, duration: 1000, property: 'top', start: -150, end: -800
     });
     scrollorama.animate('#layer-two', {
-        delay: 0, duration: 370, property: 'top', start: -125, end: -600
+        delay: 0, duration: 600, property: 'top', start: -45, end: -600
     });
     scrollorama.animate('#layer-three', {
-        delay: 0, duration: 440, property: 'top', start: -200, end: -700
+        delay: 0, duration: 660, property: 'top', start: -100, end: -650
     }); 
     scrollorama.animate('#layer-four', {
-        delay: 0, duration: 350, property: 'top', start: -110, end: -600
+        delay: 0, duration: 500, property: 'top', start: -25, end: -600
     }); 
+
 
     // SMOOTH SCROLL
 
-    // Select all links with hashes
     $('a[href*="#"]')
       // Remove links that don't actually link to anything
       .not('[href="#"]')
@@ -53,6 +54,7 @@ $(document).ready(function () {
             });
           }
         }
+        
       });
     
     // var $root = $('html, body');

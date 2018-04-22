@@ -1,16 +1,17 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: Titillium Web, Arial, sans-serif;
 }
 
 body {
 	height: 2000px;
-	font-family: Titillium Web, Arial, sans-serif;
-	font-size: 1em;
+	font-size: 1rem;
+	box-sizing: border-box;
 }
 
 
-/*nav bar*/
+/*NAV BAR*/
 
 .navbar {
 	position: fixed;
@@ -18,7 +19,6 @@ body {
 	z-index: 2;
 	width: 100%;
 	background-color: black;
-	opacity: 0.4;
 }
 
 .navbar ul {
@@ -40,6 +40,26 @@ body {
 	font-size: 0.8em;
 }
 
+.icon {
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%
+	height: 32px;
+	margin: 1rem 4rem 1rem 0.5rem;
+}
+
+.icon-list {
+	margin-right: 2rem;
+}
+
+.linkedin-icon {
+	background-image: url('img/linkedin_icon.png');
+}
+
+.github-icon {
+	background-image: url('img/github_icon.png');
+}
+
 #home-link a {
 	float: left;
 	background-image: url(img/house_white.png);
@@ -55,7 +75,7 @@ body {
 }
 
 #projects-link a:hover {
-	color: #0004ff;
+	color: yellow;
 }
 
 #contact-link a:hover {
@@ -67,7 +87,7 @@ a:hover {
 	-webkit-transition: 600ms;
 }
 
-/*parallax jumbo*/
+/*PARALLAX JUMBO*/
 
 .scrolling {
   margin: auto;
@@ -113,27 +133,192 @@ a:hover {
 	z-index: -4;
 }
 
-/*about section*/
+#sun {
+	border: 1px solid orange;
+	border-radius: 50%;
+	width: 7rem;
+	height: 7rem;
+	background-color: orange;
+	position: absolute;
+	top: -18rem;
+	left: 43%;
+	z-index: -5;
+	animation: sunrise 6s ease-out forwards;
+}
 
-#about-section {
-	margin: 850px;
+#parallax-background {
+	width: 100%;
+	height: 20rem;
+	background-color: #FFFDBC;
+	z-index: -6;
+	position: absolute;
+	top: -30rem;
+	left: 0;
+	animation: sky 5s ease-out 1s forwards;
+}
+
+/*HEADER*/
+
+header h1 {
+	font-size: 2.7rem;
+	color: white;
+	text-align: center;
+	margin-top: 30rem;
+	opacity: 0.8;
+	font-weight: 100;
+	letter-spacing: 0.7rem;
+
 }
 
 
-/*projects section*/
+/*SECTION CONTAINER*/
+
+.section-container {
+	width: 60%;
+	margin: 0 auto;
+}
+
+/*ABOUT SECTION*/
+
+#about-section {
+	margin: 25rem 2rem 2rem 2rem;
+	font-size: 1rem;
+}
+
+#about-section h3 {
+	padding: 1.5rem 0;
+}
+
+#button {
+	position: relative;
+	top: 3rem;
+	border: 2px solid black;
+	padding: 1rem 4rem 1rem 1rem;
+	box-shadow: 3px 3px 5px black;
+	background-color: white;
+	text-decoration: none;
+	color: black;
+	transition: 700ms;
+}
+
+#button:hover {
+	background-color: #5c5292;
+	color: white;
+}
+
+#file-icon {
+	display: inline-block;
+	position: absolute;
+	top: 0.8rem;
+	right: 1rem;
+	width: 2rem;
+	height: 2rem;
+	background: url(img/file.png) no-repeat;
+
+}
+
+.about-box {
+	width: 23%;
+	border: 2px solid black;
+	border-radius: 1rem;
+	padding: 1.6rem;
+	margin: 3rem 1.5rem 3rem 0;
+	display: inline-block;
+}
+
+.about-box:nth-child(4) {
+	margin-right: 0;
+}
+
+#about-skills li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 0.2rem;
+	margin: 0.3rem;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.responsive {
+	width: 100%;
+	height: auto;
+}
+
+/*PROJECTS SECTION*/
+
+#projects-section {
+	margin: 6rem 2rem;
+}
+
+.project {
+	width: 25%;
+	height: auto;
+	border: 2px solid black;
+	border-radius: 1rem;
+	padding: 1.6rem;
+	margin: 3rem 2rem 3rem 0;
+	display: inline-block;
+}
 
 
+/*CONTACT SECTION*/
 
+#contact-section {
+	margin: 4rem 2rem;
+	padding: 1rem;
+	border: 1px solid black;
+}
 
-/*contact section*/
+h2 {
+	text-align: center;
+	font-size: 3rem;
+	margin: 3rem;
+}
 
+form {
+	margin: 0 auto;
+	width: 80%;
+	padding: 2rem;
+	border: 1px solid black;
+}
+
+form label {
+	display: block;
+	padding: 0.7rem 0;
+}
+
+form textarea {
+	width: 70%;
+	height: 10rem;
+}
+
+input, textarea {
+	border: 1px solid black;
+	padding: 0.3rem;
+	/*font-family: Titillium Web, Arial, sans-serif;*/
+}
+
+#send-button {
+	background-color: white; 
+	margin: 1rem auto;
+	border: 2px solid black;
+	padding: 0.5rem;
+	box-shadow: 3px 3px 5px black;
+	font-size: 1rem;
+	letter-spacing: 0.3rem;
+	transition: 700ms;
+}
+
+#send-button:hover {
+	background-color: 
+}
 
 /*footer*/
 
 footer {
 	position: absolute;
-	bottom: 0;
-	height: 105px;
+	bottom: -70;
+	height: 65px;
 	width: 100%;
 	background-color: black;
 	letter-spacing: 1em;
@@ -147,4 +332,16 @@ footer {
 	padding: 10px;
 	text-align: center;
 	font-size: 1.3em;
+}
+
+/*KEYFRAMES*/
+
+@keyframes sky {
+    from {background-color: #FFFDBC;}
+    to {background-color: #FFFB70;}
+}
+
+@keyframes sunrise {
+    from {top: -10rem;}
+    to {top: -23rem;}
 }
