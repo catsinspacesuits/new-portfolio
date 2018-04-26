@@ -5,16 +5,16 @@ $(document).ready(function () {
     });
      
     scrollorama.animate('#layer-one', {
-        delay: 0, duration: 1000, property: 'top', start: -150, end: -800
+        delay: 0, duration: 800, property: 'top', start: 0, end: -800
     });
     scrollorama.animate('#layer-two', {
-        delay: 0, duration: 600, property: 'top', start: -45, end: -600
+        delay: 0, duration: 540, property: 'top', start: 0, end: -600
     });
     scrollorama.animate('#layer-three', {
-        delay: 0, duration: 660, property: 'top', start: -100, end: -650
+        delay: 0, duration: 580, property: 'top', start: 0, end: -600
     }); 
     scrollorama.animate('#layer-four', {
-        delay: 0, duration: 500, property: 'top', start: -25, end: -600
+        delay: 0, duration: 500, property: 'top', start: 0, end: -600
     }); 
 
 
@@ -43,14 +43,14 @@ $(document).ready(function () {
             }, 1000, function() {
               // Callback after animation
               // Must change focus!
-              var $target = $(target);
-              $target.focus();
-              if ($target.is(":focus")) { // Checking if the target was focused
-                return false;
-              } else {
-                $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-                $target.focus(); // Set focus again
-              };
+              // var $target = $(target);
+              // $target.focus();
+              // if ($target.is(":focus")) { // Checking if the target was focused
+              //   return false;
+              // } else {
+              //   $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+              //   $target.focus(); // Set focus again
+              // };
             });
           }
         }
@@ -73,4 +73,3 @@ $(document).ready(function () {
     //     return false;
     // });
 });
-
