@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Titillium+Web" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -16,18 +16,23 @@
 	    <ul class="icon-list">
 	      <li class="github-icon icon"><a href="https://github.com/catsinspacesuits"><i class="fab fa-github"></i></a></li>
 	      <li class="linkedin-icon icon"><a href="#"><i class="fab fa-linkedin"></i></a></li>
-	      <li class="linkedin-icon icon"><a href="#"><i class="fab fa-codepen"></i></a></li>
+	      <li class="codepen-icon icon"><a href="#"><i class="fab fa-codepen"></i></a></li>
 	    </ul>
-	    <ul>
+	    <ul class="header-list">
 	      <li class="nav-link"><a href="#about-section">About</a></li>
 	      <li class="nav-link"><a href="#projects-section">Projects</a></li>
 	      <li class="nav-link"><a href="#contact-section">Contact</a></li>
 	    </ul>
 	  </nav>  <!-- end of navbar -->
 
+		<div class="header-title">
+		  <h1>Scott Munro</h1>
+		  <h2>Web Developer</h2>
+		</div>
+
 		<div class="scrolling">
-			<div id="top"></div> <!-- allows smooth scroll to to pof page -->
-			<img src="layer-front.png" class="layer" id="layer-one"></img>
+			<div id="top"></div> <!-- allows smooth scroll to top of page -->
+			<img src="layer-front3.png" class="layer" id="layer-one"></img>
 			<img src="layer2.png" class="layer" id="layer-two"></img>
 			<img src="layer3.png" class="layer" id="layer-three"></img>
 			<img src="layer4.png" class="layer" id="layer-four"></img>
@@ -35,101 +40,127 @@
 
 		<div id="sun"></div>
 		<div id="sky"></div>
-			<!-- <div id="layer-one" class="layer"></div>
-			<div id="layer-two" class="layer"></div>
-			<div id="layer-three" class="layer"></div>
-			<div id="layer-four" class="layer"></div> -->
-		
-		<div class="header-title">
-			<h1>Scott Munro</h1>
-			<h2>- Web Developer -</h2>
-			<div class="section-divider"></div>
-		</div>
-		<h1 class="yo">yo yo yo </h1>
 	</header>
 
 		<!-- Sections: -->
 
 		<!-- ABOUT -->
 
-		<section class="section-background about-color">
-
+		<section class="about-section-background about-color">
 			<div class="about-container container">
 				<h2 id="about-section">About Me</h2>
-				<div class="section-divider"></div>
-		    <img id="head" class="about-box" src="img/8bit_head.jpg" alt="head" class="responsive">
-		    
-		    <p>Hi, I'm Scott! I'm a developer based in Berlin who is available for hire. I'm passionate about building apps with clean, tested and maintainable code. I have an aptitude for problem solving and a hunger for continuous improvement. I am looking to work as part of a team where I can contributing to a meaningful project whilst continuing to learn from my peers. </p>
-
-
-		    
-
-		    <div id="about-skills" class="about-box">
-		      <h3>My Skills</h3>  
-		      <ul id="skill-list">
-		        <li>HTML5</li>  
-		        <li>CSS3</li>
-		        <li>SASS</li>
-		        <li>Bootstrap</li>
-		        <li>JavaScript</li>
-		        <li>jQuery</li>
-		        <li>Ruby</li>
-		        <li>Rails</li> 
-		        <li>Responsive Web Design</li>
-		        <li>Git</li>
-		      </ul>
+				<div class="about-section-divider"></div>
+		    <img id="head" src="img/8bit_head.jpg" alt="head" class="responsive">
+		    <p><strong class="intro-sentence">Hi, I'm Scott! I'm a developer based in Berlin who is available for hire.</strong><br><br> I'm passionate about building apps with clean, tested and maintainable code. I have an aptitude for problem solving and a hunger for continuous improvement. I am looking to work as part of a team where I can contribute to a meaningful project whilst continuing to learn from my peers.</p>
+		    <div class="about-skills about-box">
+		    	<div class="skill-list">
+			      <h3>Skills</h3>  
+			      <ul>
+			      	<li>Full Stack Web Development</li>
+			      	<li>Obeject-Oriented Programming</li>
+			        <li>Responsive Web Design</li>
+			        <li>Version Control (Git)</li>
+			        <li>Unit Testing</li>
+			      </ul>
+		    	</div>
+		      <div class="skill-list">
+			      <h3>Technologies</h3>  
+			      <ul>
+			        <li>HTML5</li>  
+			        <li>CSS3</li>
+			        <li>SASS</li>
+			        <li>Bootstrap</li>
+			        <li>JavaScript</li>
+			        <li>jQuery</li>
+			        <li>Ruby</li>
+			        <li>Rails</li> 
+			        <li>Heroku</li>
+			      </ul>
+		    	</div>
 		    </div>
-
-		    <a id="resume-button" href="cv.pdf" download>Download Resume
-		    	<div id="file-icon"></div>
-		    </a>
 		  </div> <!-- end of about container -->
-		</section>
+      <div class="resume-box">
+  	    <a id="resume-button" href="cv.pdf" download>Download Resume
+  	    	<div id="file-icon"></div>
+  	    </a>
+    	</div>
+		</section> <!-- end of about section -->
 
 		<!-- PROJECTS -->
 
 		<section class="section-background projects-color">
+			<h2 id="projects-section">Projects</h2>
+			<div class="projects-section-divider"></div>
 			<div class="projects-container container">
-				<h2 id="projects-section">Projects</h2>
-				<div class="section-divider"></div>
+				
+				
 			  <div class="project">
 			  	<h3>E-commerce Site</h3>
 			  	<div class="project-image project-one"></div>
 			  	<p class="project-description">Lorem ipsum dolor sit amet, pri audire deterruisset ut, mei eu stet diceret pertinacia. Has salutandi mediocritatem te, copiosae disputationi conclusionemque in pro, fugit eleifend argumentum quo et. Sea te quidam instructior complectitur, est vidisse consequat deterruisset ex.</p>
-			  	<a href="https://github.com/catsinspacesuits/First-rails-app"><i class="fab fa-github"></i></a>
+	  	  	<div class="project-icons">
+	  		  	<a href="https://github.com/catsinspacesuits/new-portfolio"><i class="fab fa-github project-btn"></i></a>
+	  		  	<div class="project-btn" id="modal-btn">More details</div>
+	  		  	<div class="project-btn">Visit site</div>
+	  	  	</div>
 			  </div>
 			  <div class="project">
 			  	<h3>Portfolio Site</h3>
 			  	<div class="project-image project-two"></div>
 			  	<p class="project-description">Mea novum iusto dignissim ne, zril convenire forensibus duo an, ne pri dicant dolores omittantur. Nam ex fugit deseruisse, no stet iuvaret conceptam vix. Sit ut tempor epicurei expetendis, ne mel odio suscipit disputando, ut choro munere sit.</p>
-			  	<a href="https://github.com/catsinspacesuits/new-portfolio"><i class="fab fa-github"></i></a>
+	  	  	<div class="project-icons">
+	  		  	<a href="https://github.com/catsinspacesuits/new-portfolio"><i class="fab fa-github project-btn"></i></a>
+	  		  	<div class="project-btn">More details</div>
+	  		  	<div class="project-btn">Visit site</div>
+	  	  	</div>
 			  </div>
 			  <div class="project">
 			  	<h3>Calculator</h3>
 			  	<div class="project-image project-three"></div>
 			  	<p class="project-description">Eu vim nibh velit, no intellegat intellegam ius. Est harum movet exerci no, an eos harum tacimates adversarium. Ei soleat accommodare sed, decore soluta ad qui. Pri tamquam laoreet id. Nec labore noluisse consetetur ex, duo evertitur prodesset eu, et quod choro conceptam vix. Est modo contentiones in.</p>
-			  	<a href="https://github.com/catsinspacesuits"><i class="fab fa-github"></i></a>
-			  </div>
+	  	  	<div class="project-icons">
+	  		  	<a href="https://github.com/catsinspacesuits/new-portfolio"><i class="fab fa-github project-btn"></i></a>
+	  		  	<div class="project-btn">More details</div>
+	  		  	<div class="project-btn">Visit site</div>  	
+	  	  	</div>
+	  		</div>
 			  <div class="project">
 			  	<h3>Javascript To-do App</h3>
 			  	<div class="project-image project-four"></div>
 			  	<p class="project-description">Eu vim nibh velit, no intellegat intellegam ius. Est harum movet exerci no, an eos harum tacimates adversarium. Ei soleat accommodare sed, decore soluta ad qui. Pri tamquam laoreet id. Nec labore noluisse consetetur ex, duo evertitur prodesset eu, et quod choro conceptam vix. Est modo contentiones in.</p>
-			  	<a href="https://github.com/catsinspacesuits"><i class="fab fa-github"></i></a>
+	  	  	<div class="project-icons">
+	  		  	<a href="https://github.com/catsinspacesuits/new-portfolio"><i class="fab fa-github project-btn"></i></a>
+	  		  	<div class="project-btn">More details</div>
+	  		  	<div class="project-btn">Visit site</div>
+	  	  	</div>
 			  </div>
-			</div> <!-- end of project container -->
-		</section>
+			  <div class="modal"><!-- Modal for projects windows -->
+			  	<div class="modal-box">
+			  		<span id="close-box">+</span>
+			  		<h3>Javascript To-do app</h3>
+			  		<p class="modal-text">no intellegat intellegam ius. Est harum movet exerci no, an eos harum tacimates adversarium. Ei soleat accommodare sed, decore soluta ad qui. Pri tamquam laoreet id. Nec labore noluisse consetetur ex, duo evertitur prodesset eu, et quod choro conceptam vix. Est modo contentiones in.<br>no intellegat intellegam ius. Est harum movet exerci no, an eos harum tacimates adversarium. Ei soleat accommodare sed, decore soluta ad qui. Pri tamquam laoreet id. Nec labore noluisse consetetur ex, duo evertitur prodesset eu, et quod choro conceptam vix. Est modo contentiones in.</p>
+	  		  	<div class="project-icons">
+	  			  	<a href="https://github.com/catsinspacesuits/new-portfolio"><i class="fab fa-github project-btn"></i></a>
+	  			  	<div class="project-btn">Visit site</div>
+	  		  	</div> 
+			  	</div> 
+			   </div> <!-- end of modal -->
 
-		<div class="clearfix"></div> <!-- clear fix -->
+			</div> <!-- end of project container -->
+		</section> <!-- end of projects section -->
+
+		<div class="clearfix"></div> <!-- clear fix below Projects section -->
 
 		<!-- CONTACT -->
 
-		<section class="section-background contact-color">
+		<section class="contact-section-background contact-color">
+			<div id="contact-header">
+				<h2 id="contact-section">Get in Touch!</h2>
+				<div class="contact-section-divider"></div>
+			</div>
 			<div id="contact-container" class="container">
-				<div id="contact-header">
-					<h2 id="contact-section">Get in Touch</h2>
-					<div class="section-divider"></div>
-				</div>
-				<p>Email me directly at <strong>simunro (at) hotmail (dot) co (dot) uk</strong> or fill out the form below. Be sure to check out my <span href="" class="form-link">Github</span>, <span class="form-link">LinkedIn</span> and <span class="form-link">Codepen</span> accounts too!</p>
+				<p>Email me directly at <strong>simunro (at) hotmail (dot) co (dot) uk</strong> or fill out the form below. Be sure to check out my <span href="" class="form-link">Github</span>, <span class="form-link">LinkedIn</span> and <span class="form-link">Codepen</span> accounts too!<br><br>
+				You can also contact me by phone at <strong>+49 1590 2140293</strong></p>
 				<form action="https://formspree.io/simunro@hotmail.co.uk" method="POST">
 			    <label>Name: </label>
 			    <input type="text" name="name" id="name"><br>
@@ -150,7 +181,8 @@
 		  <li class="linkedin-icon icon"><a href="#"><i class="fab fa-linkedin"></i></a></li>
 		  <li class="linkedin-icon icon"><a href="#"><i class="fab fa-codepen"></i></a></li>
 		</ul>
-	  <div class="copyright"><p>&copyScott Munro 2018</p></div> 
+	  <div class="copyright"><p>&copyScott Munro 2018</p></div>
+	  <div class="footer-section-divider"></div>
 	</footer>
 
 	<!-- SCRIPTS -->

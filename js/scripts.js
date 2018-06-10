@@ -1,3 +1,6 @@
+
+// JQuery for parallax and smooth scroll
+
 $(document).ready(function () {
     // PARALLAX EFFECT
     var scrollorama = $.scrollorama({
@@ -5,16 +8,16 @@ $(document).ready(function () {
     });
      
     scrollorama.animate('#layer-one', {
-        delay: 0, duration: 800, property: 'top', start: 0, end: -800
+        delay: 0, duration: 800, property: 'top', end: -820
     });
     scrollorama.animate('#layer-two', {
-        delay: 0, duration: 540, property: 'top', start: 0, end: -600
+        delay: 0, duration: 500, property: 'top', end: -600
     });
     scrollorama.animate('#layer-three', {
-        delay: 0, duration: 580, property: 'top', start: 0, end: -600
+        delay: 0, duration: 540, property: 'top', end: -630
     }); 
     scrollorama.animate('#layer-four', {
-        delay: 0, duration: 500, property: 'top', start: 0, end: -600
+        delay: 0, duration: 440, property: 'top', end: -600
     }); 
 
 
@@ -56,20 +59,29 @@ $(document).ready(function () {
         }
         
       });
+
+
     
-    // var $root = $('html, body');
-
-    // $('.navbar-nav a').click(function() {
-    //     var href = $.attr(this, 'href');
-
-    //     if (href != undefined && href != '#') {
-    //         $root.animate({
-    //             scrollTop: $(href).offset().top
-    //         }, 500, function() {
-    //             window.location.hash = href;
-    //         });
-    //     }
-
-    //     return false;
-    // });
 });
+
+// JS for modal window
+
+// Open modal window
+
+document.querySelector('#modal-btn').addEventListener('click', 
+  function() {
+    document.querySelector('.modal').style.display = 'block';
+    document.querySelector('body').style.overflow = 'hidden';
+  });
+
+// Close modal window
+
+document.querySelector('#close-box').addEventListener('click', 
+  function () {
+    document.querySelector('.modal').style.display = 'none';
+    document.querySelector('body').style.overflow = 'visible';
+  });
+
+
+
+
