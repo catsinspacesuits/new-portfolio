@@ -248,7 +248,6 @@ header {
 
 .intro-sentence {
 	font-size: 1.5rem;
-	text-transform: uppercase;
 }
 
 .about-box {
@@ -292,7 +291,7 @@ header {
 
 #resume-button:hover {
 	background-color: #444444;
-	color: #eeeeee;
+	color: #FFD03F;
 	border-radius: 5px;
 }
 
@@ -393,6 +392,7 @@ header {
 	border-radius: 4px;
 	box-shadow: 3px 3px 10px grey;
 	background-color: #eee;
+	cursor: pointer;
 }
 
 .project-icons .fab {
@@ -449,7 +449,7 @@ header {
 	margin: 100px auto;
 }
 
-#close-box {
+.close-box {
 	position: absolute;
 	right: 10px;
 	top: 0px;
@@ -483,7 +483,7 @@ header {
 	background-image: url(img/background.jpg);
 	background-size: cover;
 	background-attachment: fixed;
-	margin-bottom: 100px;
+	margin-bottom: 70px;
 }
 
 #contact-header h2 {
@@ -553,7 +553,7 @@ input, textarea {
 	font-family: Gotham-Book, Arial, sans-serif;
 	letter-spacing: 0.3rem;
 	padding: 15px 26px;
-	margin: 15px;
+	margin: 35px;
 	color: black;
 	font-weight: 700;
 	background-color: white;
@@ -564,8 +564,9 @@ input, textarea {
 
 #send-button:hover {
 	background-color: #444444;
-	color: #dddddd;
+	color: #FFD03F;
 	cursor: pointer;
+	border-radius: 5px;
 }
 
 /*FOOTER*/
