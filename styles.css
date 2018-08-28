@@ -15,6 +15,12 @@ body {
 	z-index: -99;
 }
 
+.container {
+	width: 100%;
+	background-color: white;
+	margin: 0 auto;
+}
+
 h2 {
 	letter-spacing: 0.4rem;
 }
@@ -29,13 +35,15 @@ h2 {
 	background-color: #222222;
 }
 
-.navbar ul {
+.navbar .icon-list {
 	float: right;
 	margin-top: 1rem;
 }
 
-.header-list {
-	margin-right: 2rem;
+.navbar .header-list {
+	width: 400px;
+	margin: 20px auto;
+	padding-left: 15px;
 }
 
 .navbar li {
@@ -177,26 +185,7 @@ header {
 	font-size: 1.2rem;
 }
 
-/*SECTIONS*/
-
-.container {
-	width: 100%;
-	background-color: white;
-	margin: 0 auto;
-}
-
-.intro-color {
-	background-color: black;
-	z-index: 8;
-}
-
-.projects-color {
-	background-color: white;
-	background-size: cover;
-	height: 1450px;
-}
-
-#top { /*enables smooth scrolling on home icon link*/
+#top { /*enables smooth scrolling to top of page*/
 	position: absolute;
 	top: -40rem;
 }
@@ -227,7 +216,7 @@ header {
 	font-size: 1.3rem;
 	padding: 0 1rem 2rem 1rem;
 	line-height: 3rem;
-	margin: 60px;
+	margin: 10px;
 }
 
 .about-container h2 {
@@ -240,7 +229,7 @@ header {
 
 #head {
 	display: block;
-	width: 30%;
+	width: 240px;
 	margin: 45px auto;
 	border-radius: 30%;
 	border: 1px solid black;
@@ -251,7 +240,7 @@ header {
 }
 
 .about-box {
-	margin: 60px;
+	margin: 20px;
 	display: inline-block;
 }
 
@@ -260,7 +249,7 @@ header {
 }
 
 .skill-list {
-	width: 46%;
+	width: 43%;
 	margin: 10px;
 	float: left;
 }
@@ -295,16 +284,6 @@ header {
 	border-radius: 5px;
 }
 
-#file-icon {
-	display: inline-block;
-	position: absolute;
-	top: 0.8rem;
-	right: 1rem;
-	width: 2rem;
-	height: 2rem;
-	background: url(img/file.png) no-repeat;
-}
-
 .about-skills li {
 	display: inline-block;
 	list-style-type: none;
@@ -320,13 +299,18 @@ header {
 	margin: 0 auto;
 } 
 
-.responsive { /*to make image responsive*/
+.responsive { /*to make images responsive*/
 	width: 100%;
 	height: auto;
 }
 
-
 /*PROJECTS SECTION*/
+
+.projects-color {
+	background-color: white;
+	background-size: cover;
+	height: 1450px;
+}
 
 .projects-color h2 {
 	text-align: center;
@@ -338,7 +322,7 @@ header {
 
 .projects-section-divider {
 	border: 1px solid black;
-	width: 7%;
+	width: 10%;
 	margin: 0 auto;
 } 
 
@@ -349,8 +333,8 @@ header {
 .project {
 	position: relative;
 	float: left;
-	width: 40%;
-	height: 400px;
+	width: 38%;
+	height: 450px;
 	border: 1px solid black;
 	padding: 2%;
 	margin: 4.5%;
@@ -360,19 +344,24 @@ header {
 	background-color: rgba(255, 255, 255, 0.7);
 }
 
+.project h3 {
+	text-align: center;
+	margin: 10px 0 15px;
+}
+
+.project-description {
+	font-size: 1rem;
+	padding: 25px;
+}
+
 .project-image {
-	width: 37%;
-	height: 45%;
-	float: left;
+	width: 70%;
+	height: 50%;
 	background-size: cover;
 	background-position: center center;
 	border: 1px solid black;
-	margin: 1rem 1rem 0 0;
+	margin: 3% auto;
 	opacity: 1;
-}
-
-.project p {
-	padding: 1rem 0;
 }
 
 .project-icons {
@@ -386,13 +375,23 @@ header {
 
 .project-btn {
 	float: left;
+	width: 30%;
+	text-align: center;
+	font-size: 0.8rem;
 	border: 1px solid black;
-	padding: 7px 20px;
-	margin: 0 5px;
+	padding: 7px;
+	margin: 1.5%;
 	border-radius: 4px;
 	box-shadow: 3px 3px 10px grey;
-	background-color: #eee;
+	background-color: #eff;
 	cursor: pointer;
+	transition: 0.6s;
+}
+
+.project-btn:hover {
+	background-color: #444444;
+	color: #FFD03F;
+	border-radius: 5px;
 }
 
 .project-icons .fab {
@@ -401,6 +400,15 @@ header {
 	font-size: 2.6rem;
 	padding: 0;
 	margin-right: 10px;
+}
+
+.project-one {
+	background-image: url(img/books.png);
+	cursor: pointer;
+}
+
+.project-two {
+	background-image: url(img/portfolio.png);
 }
 
 .project-three {
@@ -415,7 +423,7 @@ header {
 	clear: both;
 }
 
-/*PROJECTS MODAL*/
+/*PROJECTS MODAL WINDOW*/
 
 .modal {
 	position: fixed;
@@ -429,7 +437,9 @@ header {
 }
 
 .modal p {
-	padding: 25px 35px;
+	padding: 6%;
+	line-height: 25px;
+	font-size: 0.9rem;
 }
 
 .modal h3 {
@@ -437,6 +447,11 @@ header {
 	padding: 15px; 
 	margin: 0 30px;
 	border-bottom: 1px solid grey;
+}
+
+.modal h4 {
+	text-align: center;
+	padding: 20px;
 }
 
 .modal-box {
@@ -449,6 +464,11 @@ header {
 	margin: 100px auto;
 }
 
+.product-features {
+	list-style: none;
+	text-align: center;
+}
+
 .close-box {
 	position: absolute;
 	right: 10px;
@@ -456,6 +476,11 @@ header {
 	font-size: 40px;
 	transform: rotate(45deg);
 	cursor: pointer;
+	transition: 0.2s;
+}
+
+.close-box:hover {
+	color: #aaa;
 }
 
 /*CONTACT SECTION*/
@@ -479,7 +504,7 @@ header {
 
 #contact-header {
 	width: 100%;
-	height: 200px;
+	height: 170px;
 	background-image: url(img/background.jpg);
 	background-size: cover;
 	background-attachment: fixed;
@@ -491,17 +516,17 @@ header {
 	font-size: 3rem;
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
-	padding: 40px;
+	padding: 30px;
 }
 
 .contact-section-divider {
-	border: 1px solid black;
+	border: 1.5px solid black;
 	width: 10%;
 	margin: 0 auto;
 } 
 
 #contact-container {
-	box-shadow: 0 0 100px #555555;
+	box-shadow: 0 0 50px #555555;
 }
 
 #contact-container p {
@@ -650,6 +675,7 @@ footer li {
     }
   }
   #home-link {display: none;}
+  
  
 
 }
