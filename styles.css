@@ -112,14 +112,6 @@ header {
 	z-index: -1;
 }
 
-#layer-oneb {
-	position: fixed;
-	height: 700px;
-	top: 60px;
-	left: 0;
-	z-index: -2;
-}
-
 #layer-two {
 	left: 0;
 	top: 50px;
@@ -141,7 +133,7 @@ header {
 
 #sun {
 	position: relative;
-	left: 80%;
+	left: 60%;
 	z-index: -5;
 	border-radius: 50%;
 	width: 50px;
@@ -153,11 +145,10 @@ header {
 
 #sky {
 	position: relative;
-	top: -2rem;
 	z-index: -6;
 	width: 100%;
 	height: 600px;
-	background: linear-gradient(170deg, darkblue, #FFD03F);
+	background: linear-gradient(170deg, black, #FFD03F);
 	animation: sky 5s ease-out forwards;
 }
 
@@ -165,8 +156,8 @@ header {
 
 .header-title {
 	position: absolute;
-	top: 150px;
-	left: 400px;
+	top: 120px;
+	left: 10%;
 	float: left;
 	z-index: 1;
 	text-align: center;
@@ -309,7 +300,6 @@ header {
 .projects-color {
 	background-color: white;
 	background-size: cover;
-	height: 1450px;
 }
 
 .projects-color h2 {
@@ -437,8 +427,8 @@ header {
 }
 
 .modal p {
-	padding: 6%;
-	line-height: 25px;
+	padding: 4% 6%;
+	line-height: 1.5rem;
 	font-size: 0.9rem;
 }
 
@@ -457,7 +447,7 @@ header {
 .modal-box {
 	position: relative;
 	top: -15px;
-	width: 850px;
+	width: 65%;
 	height: 85vh;
 	background-color: white;
 	border-radius: 5px;
@@ -508,7 +498,7 @@ header {
 	background-image: url(img/background.jpg);
 	background-size: cover;
 	background-attachment: fixed;
-	margin-bottom: 70px;
+	margin: 120px 0 50px 0;
 }
 
 #contact-header h2 {
@@ -521,7 +511,7 @@ header {
 
 .contact-section-divider {
 	border: 1.5px solid black;
-	width: 10%;
+	width: 20%;
 	margin: 0 auto;
 } 
 
@@ -638,12 +628,12 @@ footer li {
 
 @keyframes sky {
     from {top: 10px;}
-    to {top: -200px;}
+    to {top: -180px;}
 }
 
 @keyframes sunrise {
     from {top: 450px;}
-    to {top: 210px;}
+    to {top: 265px;}
 }
 
 @keyframes fade {
@@ -656,26 +646,76 @@ footer li {
 /*Small:*/
 
 @media only screen and (max-width: 600px) {
-		html {font-size: 10px;}
-		.container {width: 100%;
-								padding: 8px;
-								margin: 0;
-
+		html {
+			font-size: 9px;
 		}
-    #contact-container {width: 100%;}
-    
-    .projects-container {width: 100%;}
-    .layer {width: 100vw;
-  height: 100vh;
-  object-fit: cover;}
-  .section-background {padding: 0;}
-    .header-title h1 {font-size: 24px;}
-    .header-title {left: 70px;
-    								top: 160px;
+		.container {
+			width: 100%;
+			padding: 8px;
+			margin: 0;
+		}
+    #contact-container {
+    	width: 100%;
+    }   
+    .projects-container {
+    	width: 100%;
     }
-  }
-  #home-link {display: none;}
-  
- 
+    .project {
+    	width: 92.5%;
+    }
 
-}
+    .project-image {
+    	background-position: 45% 50%;
+    }
+
+    .modal-box {
+    	width: 95%;
+    }
+  	.section-background {
+  		padding: 0;
+  	}
+    .header-title h1 {
+    	font-size: 20px;
+    }
+    /*.header-title {
+    left: 10%;
+    top: 160px;
+    								}*/
+    #home-link {
+    	display: none;
+    }
+
+    /*JUMBO*/
+
+    #sun {
+    	width: 18px;
+    	height: 18px;
+    }
+
+    @keyframes sunrise {
+        from {top: 300px;}
+        to {top: 200px;}
+      }
+
+    .layer {
+    	width: 100vw;
+    	height: 100vh;
+    	object-fit: cover;
+    }
+  	#layer-one {
+  		height: 700px;
+  		top: -100px;
+  	}
+  	#layer-two {
+  		top: -90px;
+  	}
+  	#layer-three {
+  		height: 700px;
+  		top: -165px;
+  	}
+  	#layer-four {
+  		top: -55px;
+  	}
+  }
+  
+  
