@@ -63,12 +63,12 @@ h2 {
 	color: #FFD03F;
 }
 
-.fab {
+.fab, .far {
 	font-size: 1.8rem;
 	color: white;
 }
 
-.fab:hover {
+.fab:hover, .far:hover {
 	color: #FFD03F;
 }
 
@@ -149,7 +149,7 @@ header {
 	width: 100%;
 	height: 600px;
 	background: linear-gradient(170deg, black, #FFD03F);
-	animation: sky 5s ease-out forwards;
+	animation: sky 9s ease-out forwards;
 }
 
 /*TITLE*/
@@ -208,6 +208,7 @@ header {
 	padding: 0 1rem 2rem 1rem;
 	line-height: 3rem;
 	margin: 10px;
+	text-align: center;
 }
 
 .about-container h2 {
@@ -277,6 +278,7 @@ header {
 
 .about-skills li {
 	display: inline-block;
+	text-align: center;
 	list-style-type: none;
 	padding: 0.3rem;
 	margin: 0.3rem;
@@ -341,7 +343,8 @@ header {
 
 .project-description {
 	font-size: 1rem;
-	padding: 25px;
+	padding: 22px;
+	line-height: 1.35rem;
 }
 
 .project-image {
@@ -429,7 +432,6 @@ header {
 .modal p {
 	padding: 4% 6%;
 	line-height: 1.5rem;
-	font-size: 0.9rem;
 }
 
 .modal h3 {
@@ -442,6 +444,10 @@ header {
 .modal h4 {
 	text-align: center;
 	padding: 20px;
+}
+
+.modal-text {
+	font-size: 0.8rem;
 }
 
 .modal-box {
@@ -643,9 +649,45 @@ footer li {
 
 /*MEDIA QUERIES*/
 
+@media only screen and (min-width: 1400px) { 
+	.projects-container {
+		width: 65%;
+	}
+	.project {
+		height: 550px;
+	}
+}
+
+@media only screen and (max-width: 1030px) and (min-width: 840px) {
+	.project, .project-description, .project-btn {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 1260px) {
+	.container {
+		width: 100%;
+		padding: 8px;
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 705px) {
+	.navbar {
+		font-size: 11px;
+	}
+}
+
+@media only screen and (max-width: 840px) and (min-width: 600px) {
+	.project {
+		width: 70%;
+		margin: 0 auto;
+	}
+}
+
 /*Small:*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 840px) {
 		html {
 			font-size: 9px;
 		}
@@ -663,13 +705,16 @@ footer li {
     .project {
     	width: 92.5%;
     }
-
     .project-image {
-    	background-position: 45% 50%;
+    	background-position: center center;
     }
-
     .modal-box {
     	width: 95%;
+    }
+    .modal-text{
+    	font-size: 1.5rem;
+    	line-height: 1.4rem;
+    	text-align: center;
     }
   	.section-background {
   		padding: 0;
@@ -677,12 +722,18 @@ footer li {
     .header-title h1 {
     	font-size: 20px;
     }
-    /*.header-title {
-    left: 10%;
-    top: 160px;
-    								}*/
+    
     #home-link {
     	display: none;
+    }
+
+    #contact-container {
+    	box-shadow: none;
+    }
+
+    #contact-header {
+    	height: 120px;
+    	margin-bottom: 25px;
     }
 
     /*JUMBO*/
