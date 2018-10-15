@@ -3,28 +3,28 @@
 <head>
 	<title>Scott Munro | Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Titillium+Web" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-  <header>                        
-    <!-- nav bar --> 
-	  <nav class="navbar">
-	    <a id="home-link" href="#top"></a>  
-	    <ul class="icon-list">
-	      <li class="github-icon icon"><a href="https://github.com/catsinspacesuits"><i class="fab fa-github"></i></a></li>
-	      <li class="linkedin-icon icon"><a href="https://www.linkedin.com/in/scottimunro/"><i class="fab fa-linkedin"></i></a></li>
-	      <li class="codepen-icon icon"><a href="Munro_Scott_Resume.pdf" download><i class="far fa-address-book"></i></a></li>
-	    </ul>
-	    <ul class="header-list">
-	      <li class="nav-link"><a href="#about-section">About</a></li>
-	      <li class="nav-link"><a href="#projects-section">Projects</a></li>
-	      <li class="nav-link"><a href="#contact-section">Contact</a></li>
-	    </ul>
-	  </nav>  <!-- end of navbar -->
-
+                          
+  <nav class="navbar"> <!-- nav bar --> 
+    <a id="home-link" href="#top" title="Home"></a>  
+    <ul class="icon-list">
+      <li class="github-icon icon"><a href="https://github.com/catsinspacesuits "target="_blank"><i class="fab fa-github" title="My Github"></i></a></li>
+      <li class="linkedin-icon icon"><a href="https://www.linkedin.com/in/scottimunro/" target="_blank"><i class="fab fa-linkedin" title="My LinkedIn"></i></a></li>
+      <li class="codepen-icon icon"><a href="Munro_Scott_Resume.pdf" target="_blank" download><i class="far fa-address-book" title="Download Resume"></i></a></li>
+    </ul>
+    <ul class="header-list">
+      <li class="nav-link"><a href="#about-section">About</a></li>
+      <li class="nav-link"><a href="#projects-section">Projects</a></li>
+      <li class="nav-link"><a href="#contact-section">Contact</a></li>
+    </ul>
+  </nav>  <!-- end of navbar -->
+	  
+	<header>
 		<div class="header-title">
 		  <h1>Scott Munro</h1>
 		  <h2>Web Developer</h2>
@@ -41,8 +41,6 @@
 		<div id="sun"></div>
 		<div id="sky"></div>
 	</header>
-
-	<!-- Sections: -->
 
 	<!-- ABOUT -->
 
@@ -80,7 +78,7 @@
 	    </div>
 	  </div> <!-- end of about container -->
     <div class="resume-box">
-	    <a id="resume-button" href="Munro_Scott_Resume.pdf" download>Download Resume</a>
+	    <a id="resume-button" href="Munro_Scott_Resume.pdf" target="_blank" download>Download Resume</a>
   	</div>
 	</section> <!-- end of about section -->
 
@@ -96,9 +94,9 @@
 		  	<div class="project-image project-one modal-btn" data-modal="#modal1"></div>
 		  	<p class="project-description">Red & Black Books is a demo E-commerce site built using Ruby on Rails.</p>
   	  	<div class="project-icons">
-  		  	<a href="https://github.com/catsinspacesuits/Rails-E-commerce-site"><button class="project-btn">Source Code</button></a>
+  		  	<a href="https://github.com/catsinspacesuits/Rails-E-commerce-site" target="_blank"><button class="project-btn">Source Code</button></a>
   		  	<button class="project-btn modal-btn" data-modal="#modal1">More Details</button>
-  		  	<a href="http://redandblackbooks.herokuapp.com/"><button class="project-btn">Visit Site</button></a>
+  		  	<a href="http://redandblackbooks.herokuapp.com/" target="_blank"><button class="project-btn">Visit Site</button></a>
   	  	</div>
 		  </div>
 		  <div class="modal" id="modal1"><!-- Modal for projects windows -->
@@ -121,8 +119,8 @@
 
 		  		Unit and Functional testing is implemented using RSpec, enabling me to write and refactor code with confidence. AJAX and caching are also included to reduce database requests and improve response times of many features.</p>
   		  	<div class="project-icons">
-  			  	<a href="https://github.com/catsinspacesuits/Rails-E-commerce-site"><button class="project-btn">Source Code</button></a>
-  			  	<a href="http://redandblackbooks.herokuapp.com/"><button class="project-btn" >Visit Site</button></a>
+  			  	<a href="https://github.com/catsinspacesuits/Rails-E-commerce-site" target="_blank"><button class="project-btn">Source Code</button></a>
+  			  	<a href="http://redandblackbooks.herokuapp.com/" target="_blank"><button class="project-btn" >Visit Site</button></a>
   		  	</div> 
 		  	</div> 
 		  </div> <!-- end of modal -->
@@ -132,7 +130,7 @@
 		  	<div class="project-image project-two"></div>
 		  	<p class="project-description">The site that you are currently on! My personal portfolio site: built using HTML5, custom CSS, vanilla JS and the jQuery Scrollorama plugin.</p>
   	  	<div class="project-icons">
-  		  	<a href="https://github.com/catsinspacesuits/new-portfolio"><button class="project-btn">Source Code</button></a>
+  		  	<a href="https://github.com/catsinspacesuits/new-portfolio" target="_blank"><button class="project-btn">Source Code</button></a>
   		  	<button class="project-btn modal-btn" data-modal="#modal2">More Details</button>
   	  	</div>
 		  </div>
@@ -150,41 +148,19 @@
 		  		</ul>
 		  		<p class="modal-text">This site was created to showcase projects that I've worked on and a little bit about my background and experience. I built it without using any CSS frameworks or preprocessors to demostrate that I understand the foundations and processes that make these tools work, such as positioning, transitions and animations. To make the site useable on devises with different screen sizes I used media queries and size units such as percentages and rems. I also used GIMP image editor for image processing to reduce file sizes and improve load times. Semantic HTML5 is used throughout to improve keyboard accessibility </p>
   		  	<div class="project-icons">
-  			  	<a href="https://github.com/catsinspacesuits/new-portfolio"><button class="project-btn">Source Code</button></a>
+  			  	<a href="https://github.com/catsinspacesuits/new-portfolio" target="_blank"><button class="project-btn">Source Code</button></a>
   		  	</div> 
 		  	</div> 
 		  </div> <!-- end of modal -->
-
-		  <!-- <div class="project">
-		  	<h3>Calculator</h3>
-		  	<div class="project-image project-three"></div>
-		  	<p class="project-description">Eu vim nibh velit, no intellegat intellegam ius. Est harum movet exerci no, an eos harum tacimates adversarium. Ei soleat accommodare sed, decore soluta ad qui. Pri tamquam laoreet id. Nec labore noluisse consetetur ex, duo evertitur prodesset eu, et quod choro conceptam vix. Est modo contentiones in.</p>
-  	  	<div class="project-icons">
-  		  	<div class="project-btn">Source Code</div>
-  		  	<span class="project-btn modal-btn" data-modal="#modal3">More Details</span>
-  		  	<div class="project-btn">Visit site</div>  	
-  	  	</div>
-  		</div>
-		  <div class="modal" id="modal3">
-		  	<div class="modal-box">
-		  		<span class="close-box" data-modal="#modal3">+</span>
-		  		<h3>Calculator</h3>
-		  		<p class="modal-text">no intellegat intellegam ius. Est harum movet exerci no, an eos harum tacimates adversarium. Ei soleat accommodare sed, decore soluta ad qui. Pri tamquam laoreet id. Nec labore noluisse consetetur ex, duo evertitur prodesset eu, et quod choro conceptam vix. Est modo contentiones in.<br>no intellegat intellegam ius. Est harum movet exerci no, an eos harum tacimates adversarium. Ei soleat accommodare sed, decore soluta ad qui. Pri tamquam laoreet id. Nec labore noluisse consetetur ex, duo evertitur prodesset eu, et quod choro conceptam vix. Est modo contentiones in.</p>
-  		  	<div class="project-icons">
-  			  	<div class="project-btn">Source Code</div>
-  			  	<div class="project-btn">Visit site</div>
-  		  	</div> 
-		  	</div> 
-		  </div> <!-- end of modal --> 
 
 		  <div class="project">
 		  	<h3>Javascript To-do App</h3>
 		  	<div class="project-image project-four"></div>
 		  	<p class="project-description">A vanilla JavaScript application built to cement my knowledge of the fundamentals of JS CRUD functionality</p>
   	  	<div class="project-icons">
-  		  	<a href="https://github.com/catsinspacesuits/Vanilla-JS-todo-list"><button class="project-btn">Source Code</button></a>
+  		  	<a href="https://github.com/catsinspacesuits/Vanilla-JS-todo-list" target="_blank"><button class="project-btn">Source Code</button></a>
   		  	<button class="project-btn modal-btn" data-modal="#modal4">More Details</button>
-  		  	<a href="http://gracious-jennings-0da2f2.bitballoon.com/"><button class="project-btn">Visit Site</button></a>
+  		  	<a href="http://gracious-jennings-0da2f2.bitballoon.com/" target="_blank"><button class="project-btn">Visit Site</button></a>
   	  	</div>
 		  </div>
 		  <div class="modal" id="modal4"><!-- Modal for projects windows -->
@@ -200,8 +176,8 @@
 		  		</ul>
 		  		<p class="modal-text">This app was created to solidify my knowledge of JavaScript fundamentals. By coding in vanilla JS rather than using librares or frameworks I was able to increase my understanding of the code that runs behind the scenes in such tools. To style the app I used a mobile first approach to strengthen my skills in designing with this workflow. I also used building this app as an opportunity to learn SASS and have found it to massively boost my productivity and have used it on ever project since!</p>
   		  	<div class="project-icons">
-  			  	<a href="https://github.com/catsinspacesuits/Vanilla-JS-todo-list"><button class="project-btn">Source Code</button></a>
-  			  	<a href="http://gracious-jennings-0da2f2.bitballoon.com/"><button class="project-btn">Visit Site</button></a>
+  			  	<a href="https://github.com/catsinspacesuits/Vanilla-JS-todo-list" target="_blank"><button class="project-btn">Source Code</button></a>
+  			  	<a href="http://gracious-jennings-0da2f2.bitballoon.com/" target="_blank"><button class="project-btn">Visit Site</button></a>
   		  	</div> 
 		  	</div> 
 		  </div> <!-- end of modal -->
@@ -219,7 +195,7 @@
 			<div class="contact-section-divider"></div>
 		</div>
 		<div id="contact-container" class="container">
-			<p>Email me directly at <strong>scott (dot) ian (dot) munro (at) gmail (dot) com</strong> or fill out the form below. Be sure to check out my <span href="https://github.com/catsinspacesuits" class="form-link">Github</span>, <span href="https://www.linkedin.com/in/scottimunro/" class="form-link">LinkedIn</span> and <span class="form-link" href="Munro_Scott_Resume.pdf" download>Resume</span> accounts too!<br><br>
+			<p>Email me directly at <strong>scott (dot) ian (dot) munro (at) gmail (dot) com</strong> or fill out the form below. Be sure to check out my <a href="https://github.com/catsinspacesuits" class="form-link" target="_blank"><span>Github</span></a>, <a href="https://www.linkedin.com/in/scottimunro/" class="form-link" target="_blank"><span>LinkedIn</span></a> and <a href="Munro_Scott_Resume.pdf" target="_blank" class="form-link" download><span>Resume</span></a> accounts too!<br><br>
 			You can also contact me by phone at:<br><strong>+49 1590 2140293</strong></p>
 			<form action="https://formspree.io/simunro@hotmail.co.uk" method="POST">
 		    <label>Name: </label>
@@ -237,9 +213,9 @@
 
 	<footer>
 		<ul class="icon-list">
-		  <li class="github-icon icon"><a href="https://github.com/catsinspacesuits"><i class="fab fa-github"></i></a></li>
-		  <li class="linkedin-icon icon"><a href="https://www.linkedin.com/in/scottimunro/"><i class="fab fa-linkedin"></i></a></li>
-		  <li class="linkedin-icon icon"><a href="Munro_Scott_Resume.pdf" download><i class="far fa-address-book"></i></a></li>
+		  <li class="github-icon icon"><a href="https://github.com/catsinspacesuits" target="_blank"><i class="fab fa-github" title="My Github"></i></a></li>
+		  <li class="linkedin-icon icon"><a href="https://www.linkedin.com/in/scottimunro/" target="_blank"><i class="fab fa-linkedin" title="My LinkedIn"></i></a></li>
+		  <li class="linkedin-icon icon"><a href="Munro_Scott_Resume.pdf" target="_blank" download><i class="far fa-address-book" title="Download Resume"></i></a></li>
 		</ul>
 	  <div class="copyright"><p>&copyScott Munro 2018</p></div>
 	  <div class="footer-section-divider"></div>

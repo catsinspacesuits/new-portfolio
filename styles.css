@@ -47,6 +47,7 @@ h2 {
 }
 
 .navbar li {
+	position: relative;
 	display: inline-block;
 	padding: 0.8rem;
 	letter-spacing: 0.2rem;
@@ -77,9 +78,27 @@ h2 {
 	background-image: url(img/house_white.png);
 	background-size: 80%;
 	background-repeat: no-repeat;
-	margin: 25px 0px 0px 30px;
+	margin: 25px 0 0 30px;
 	width: 40px;
 	height: 40px;
+}
+
+/*TOOLTIPS*/
+
+.tooltip {
+	position: absolute;
+	right: 2.6rem;
+	top: 3.3rem;
+	font-family: Gotham-Book, Arial, sans-serif;
+	border: 2px solid #333;
+	color: #333;
+	border-radius: 5px;
+	font-size: 1.1rem;
+	padding: 0.3rem;
+	background-color: #fff;
+	text-transform: none;
+	line-height: 1.2;
+	letter-spacing: 0.1rem;
 }
 
 /*PARALLAX JUMBO*/
@@ -93,11 +112,12 @@ header {
 	position: relative;
   margin: auto;
   width: 100%;
-	height: 600px;
+	height: 100vh;
 	z-index: 1;
 }
 
 .layer {
+	left: 0;
 	width: 100%;
 	height: 600px;
 	background-size: cover;
@@ -105,29 +125,24 @@ header {
 }
 
 #layer-one {
-	position: fixed;
 	height: 800px;
-	top: -60px;
-	left: 0;
+	top: -6vh;
 	z-index: -1;
 }
 
 #layer-two {
-	left: 0;
-	top: 50px;
+	top: 3vh;
 	z-index: -4;
 }
 
 #layer-three {
 	height: 700px;
-	top: -15px;
-	left: 0;
+	top: -1vh;
 	z-index: -3;
 }
 
 #layer-four {
-	top: 65px;
-	left: 0;
+	top: 5vh;
 	z-index: -5;
 }
 
@@ -139,8 +154,8 @@ header {
 	width: 50px;
 	height: 50px;
 	background-color: #FFD03F;
-	box-shadow: 0px 0px 40px 20px #FFD03F;	
-	animation: sunrise 5s ease-out forwards;
+	box-shadow: 0 0 40px 20px #FFD03F;	
+	animation: sunrise 5s 2s ease-out forwards;
 }
 
 #sky {
@@ -149,7 +164,7 @@ header {
 	width: 100%;
 	height: 600px;
 	background: linear-gradient(170deg, black, #FFD03F);
-	animation: sky 9s ease-out forwards;
+	animation: sky 6s 2s ease-out forwards;
 }
 
 /*TITLE*/
@@ -161,7 +176,7 @@ header {
 	float: left;
 	z-index: 1;
 	text-align: center;
-	animation: fade 4s forwards;
+	animation: fade 5s forwards;
 	color: rgba(255, 255, 255, 0.9);
 	text-transform: uppercase;
 	letter-spacing: 0.7rem;
@@ -199,14 +214,14 @@ header {
 	width: 60%;
 	padding: 10px;
 	background-color: white;
-	color: black
+	color: black;
 	height: auto;
 }
 
 .about-container p {
 	font-size: 1.3rem;
 	padding: 0 1rem 2rem 1rem;
-	line-height: 3rem;
+	line-height: 3;
 	margin: 10px;
 	text-align: center;
 }
@@ -214,7 +229,7 @@ header {
 .about-container h2 {
 	font-size: 2.6rem;
 	text-align: center;
-	padding: 2rem;
+	padding: 5.4rem 2rem 1.6rem;
 	color: black;
 	text-transform: uppercase;
 }
@@ -280,7 +295,7 @@ header {
 	display: inline-block;
 	text-align: center;
 	list-style-type: none;
-	padding: 0.3rem;
+	padding: 3%;
 	margin: 0.3rem;
 	border: 1px solid black;
 	border-radius: 5px;
@@ -306,7 +321,7 @@ header {
 
 .projects-color h2 {
 	text-align: center;
-	padding: 3rem 0 1.6rem 0;
+	padding: 5rem 0 1.6rem 0;
 	font-size: 3rem;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -344,7 +359,7 @@ header {
 .project-description {
 	font-size: 1rem;
 	padding: 22px;
-	line-height: 1.35rem;
+	line-height: 1.35;
 }
 
 .project-image {
@@ -404,10 +419,6 @@ header {
 	background-image: url(img/portfolio.png);
 }
 
-.project-three {
-	background-image: url(img/calculator.jpg);
-}
-
 .project-four {
 	background-image: url(img/todo.png);
 }
@@ -431,7 +442,7 @@ header {
 
 .modal p {
 	padding: 4% 6%;
-	line-height: 1.5rem;
+	line-height: 1.5;
 }
 
 .modal h3 {
@@ -468,7 +479,7 @@ header {
 .close-box {
 	position: absolute;
 	right: 10px;
-	top: 0px;
+	top: 0;
 	font-size: 40px;
 	transform: rotate(45deg);
 	cursor: pointer;
@@ -504,7 +515,7 @@ header {
 	background-image: url(img/background.jpg);
 	background-size: cover;
 	background-attachment: fixed;
-	margin: 120px 0 50px 0;
+	margin: 10% 0 10% 0;
 }
 
 #contact-header h2 {
@@ -533,6 +544,7 @@ header {
 
 .form-link {
 	color: #1158C8;
+	text-decoration: none;
 }
 
 form {
@@ -606,6 +618,7 @@ footer li {
 }
 
 .icon-list {
+	position: relative;
 	width: 12rem;
 	height: 4rem;
 	margin: 0 auto;
@@ -670,31 +683,25 @@ footer li {
 		padding: 8px;
 		margin: 0;
 	}
-}
-
-@media only screen and (max-width: 705px) {
-	.navbar {
-		font-size: 11px;
-	}
-}
-
-@media only screen and (max-width: 840px) and (min-width: 600px) {
-	.project {
-		width: 70%;
-		margin: 0 auto;
+	#contact-container {
+		margin: 50px auto;
+		width: 68%; 
 	}
 }
 
 /*Small:*/
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 950px) {
 		html {
-			font-size: 9px;
+			font-size: 13px;
 		}
 		.container {
 			width: 100%;
 			padding: 8px;
 			margin: 0;
+		}
+		.navbar {
+			font-size: 10px;
 		}
     #contact-container {
     	width: 100%;
@@ -713,14 +720,14 @@ footer li {
     }
     .modal-text{
     	font-size: 1.5rem;
-    	line-height: 1.4rem;
+    	line-height: 1.4;
     	text-align: center;
     }
   	.section-background {
   		padding: 0;
   	}
     .header-title h1 {
-    	font-size: 20px;
+    	font-size: 1.5rem;
     }
     
     #home-link {
@@ -739,34 +746,82 @@ footer li {
     /*JUMBO*/
 
     #sun {
-    	width: 18px;
-    	height: 18px;
+    	width: 2.5em;
+    	height: 2.5em;
     }
-
     @keyframes sunrise {
-        from {top: 300px;}
-        to {top: 200px;}
+        from {top: 370px;}
+        to {top: 240px;}
       }
-
     .layer {
     	width: 100vw;
     	height: 100vh;
     	object-fit: cover;
     }
   	#layer-one {
-  		height: 700px;
-  		top: -100px;
+  		top: -9vh;
   	}
   	#layer-two {
-  		top: -90px;
+  		top: 1vh;
+  		height: 70vh;
   	}
   	#layer-three {
-  		height: 700px;
-  		top: -165px;
+  		top: -6vh;
   	}
   	#layer-four {
-  		top: -55px;
+  		top: 1rem;
+  		height: 70vh;
+  	}
+  
+
+  @media only screen and (max-width: 500px) {
+  	.navbar {
+  		font-size: 8px;
+  	}
+  	.navbar i {
+  		font-size: 18px;
+  	}
+  }
+
+  @media only screen and (max-width: 500px) {
+  	.navbar li {
+  		font-size: 9px;
+  		padding: 6px;
+  	}
+  	.navbar i {
+  		font-size: 16px;
+  	}
+  	.navbar .icon-list {
+  		width: 100px;
   	}
   }
   
-  
+/*EXTRA SMALL*/
+
+@media only screen and (min-width: 550px) and (max-width: 950px) {
+	html {
+		font-size: 14px;
+	}
+	.project {
+		height: 550px;
+	}
+	.project-description {
+		padding: 32px;
+		font-size: 1.3rem;
+		line-height: 1.6;
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 750px) and (max-width: 950px) {
+	.project {
+		width: 70%;
+		margin: 16%;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.modal-text {
+		font-size: 0.8rem;
+	}
+}

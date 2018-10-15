@@ -53,6 +53,44 @@ $(document).ready(function () {
    
 });
 
+// JS for tooltips
+
+
+var Tooltip = {
+  init: function() {
+    // create links array
+    var links = document.querySelectorAll("i");
+
+    if(links) {
+      for (var i = 0; i < links.length; i++) {
+        if (links[i].title.length) {
+          links[i].addEventListener("mouseover", Tooltip.showTip);
+          links[i].addEventListener("mouseout", Tooltip.hideTip);
+        }
+      }
+    }    
+  },
+
+  showTip: function(event) {
+    // create and add tooltip
+    var spanElement = document.createElement("span");
+    spanElement.className = "tooltip";
+    spanElement.innerHTML = event.target.title;
+
+    // set element title to nothing
+    event.target.title = "";
+    event.target.appendChild(spanElement);
+    event.target._spanRef = spanElement;
+  },
+
+  hideTip: function(event) {
+    event.target.title = event.target._spanRef.innerHTML;
+    event.target.removeChild(event.target._spanRef);
+  }
+};  
+
+window.addEventListener("load", Tooltip.init);
+
 // JS for modal window
 
 // Open modal windows
