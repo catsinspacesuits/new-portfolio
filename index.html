@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Scott Munro | Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -32,10 +32,10 @@
 
 		<div class="scrolling">
 			<div id="top"></div> <!-- allows smooth scroll to top of page -->
-			<img src="layer-front3.png" class="layer" id="layer-one"></img>
-			<img src="layer2.png" class="layer" id="layer-two"></img>
-			<img src="layer3.png" class="layer" id="layer-three"></img>
-			<img src="layer4.png" class="layer" id="layer-four"></img>
+			<img src="img/layer-front3.png" class="layer" id="layer-one"></img>
+			<img src="img/layer2.png" class="layer" id="layer-two"></img>
+			<img src="img/layer3.png" class="layer" id="layer-three"></img>
+			<img src="img/layer4.png" class="layer" id="layer-four"></img>
 		</div>
 
 		<div id="sun"></div>
@@ -68,6 +68,7 @@
 		        <li>CSS3</li>
 		        <li>SASS</li>
 		        <li>Bootstrap</li>
+		        <li>Flexbox</li>
 		        <li>JavaScript</li>
 		        <li>jQuery</li>
 		        <li>Ruby</li>
@@ -104,7 +105,7 @@
 		  		<span class="close-box" data-modal="#modal1">+</span>
 		  		<h3>E-commerce Site</h3>
 		  		<h4>Product Features</h4>
-		  		<ul class="product-features">
+		  		<ul class="product-features"><i>
 		  			<li>Responsive design</li>
 		  			<li>Stripe payment functionality</li>
 		  			<li>Realtime comments update with Action Cable</li>  			
@@ -113,11 +114,13 @@
 		  			<li>Form validation</li>
 		  			<li>User Authentication using the Devise</li>
 		  			<li>Authorization using the CanCanCan gem</li>
-		  			<li>Contact form</li>
+		  			<li>Contact form</li></i>
 		  		</ul>
 		  		<p class="modal-text">Red and Black Books is a demo E-commerce application. Users are able to register an account, allowing them to leave comments and reviews of products. An admin function can also be delegated to a user, enabling them to access the full CRUD functionality of products controller. This allows admins to add, edit and delete products from the PostgreSQL database.
 
-		  		Unit and Functional testing is implemented using RSpec, enabling me to write and refactor code with confidence. AJAX and caching are also included to reduce database requests and improve response times of many features.</p>
+		  		Unit and Functional testing is implemented using RSpec, enabling me to write and refactor code with confidence. AJAX and caching are also included to reduce database requests and improve response times of many features.
+
+		  		The site layout was done with the help of Bootstrap and Flexbox</p>
   		  	<div class="project-icons">
   			  	<a href="https://github.com/catsinspacesuits/Rails-E-commerce-site" target="_blank"><button class="project-btn">Source Code</button></a>
   			  	<a href="http://redandblackbooks.herokuapp.com/" target="_blank"><button class="project-btn" >Visit Site</button></a>
@@ -127,7 +130,7 @@
 
 		  <div class="project">
 		  	<h3>Portfolio Site</h3>
-		  	<div class="project-image project-two"></div>
+		  	<div class="project-image project-two modal-btn" data-modal="#modal2"></div>
 		  	<p class="project-description">The site that you are currently on! My personal portfolio site: built using HTML5, custom CSS, vanilla JS and the jQuery Scrollorama plugin.</p>
   	  	<div class="project-icons">
   		  	<a href="https://github.com/catsinspacesuits/new-portfolio" target="_blank"><button class="project-btn">Source Code</button></a>
@@ -139,12 +142,12 @@
 		  		<span class="close-box" data-modal="#modal2">+</span>
 		  		<h3>Portfolio Site</h3>
 		  		<h4>Product Features</h4>
-		  		<ul class="product-features">
+		  		<ul class="product-features"><i>
 		  			<li>HTML5</li>
 		  			<li>CSS3</li>
 		  			<li>Vanilla JS</li>
 		  			<li>Scrollorama jQuery plugin</li>
-		  			<li>Smooth Scroll jQuery plugin</li> 			
+		  			<li>Smooth Scroll jQuery plugin</li></i>			
 		  		</ul>
 		  		<p class="modal-text">This site was created to showcase projects that I've worked on and a little bit about my background and experience. I built it without using any CSS frameworks or preprocessors to demostrate that I understand the foundations and processes that make these tools work, such as positioning, transitions and animations. To make the site useable on devises with different screen sizes I used media queries and size units such as percentages and rems. I also used GIMP image editor for image processing to reduce file sizes and improve load times. Semantic HTML5 is used throughout to improve keyboard accessibility </p>
   		  	<div class="project-icons">
@@ -155,7 +158,7 @@
 
 		  <div class="project">
 		  	<h3>Javascript To-do App</h3>
-		  	<div class="project-image project-four"></div>
+		  	<div class="project-image project-four modal-btn" data-modal="#modal4"></div>
 		  	<p class="project-description">A vanilla JavaScript application built to cement my knowledge of the fundamentals of JS CRUD functionality</p>
   	  	<div class="project-icons">
   		  	<a href="https://github.com/catsinspacesuits/Vanilla-JS-todo-list" target="_blank"><button class="project-btn">Source Code</button></a>
@@ -168,11 +171,11 @@
 		  		<span class="close-box" data-modal="#modal4">+</span>
 		  		<h3>Javascript To-do app</h3>
 		  		<h4>Product Features</h4>
-		  		<ul class="product-features">
+		  		<ul class="product-features"><i>
 		  			<li>HTML5</li>
 		  			<li>CSS3</li>
 		  			<li>Vanilla JS</li>
-		  			<li>SASS</li>  			
+		  			<li>SASS</li></i>		
 		  		</ul>
 		  		<p class="modal-text">This app was created to solidify my knowledge of JavaScript fundamentals. By coding in vanilla JS rather than using librares or frameworks I was able to increase my understanding of the code that runs behind the scenes in such tools. To style the app I used a mobile first approach to strengthen my skills in designing with this workflow. I also used building this app as an opportunity to learn SASS and have found it to massively boost my productivity and have used it on ever project since!</p>
   		  	<div class="project-icons">
@@ -195,7 +198,7 @@
 			<div class="contact-section-divider"></div>
 		</div>
 		<div id="contact-container" class="container">
-			<p>Email me directly at <strong>scott (dot) ian (dot) munro (at) gmail (dot) com</strong> or fill out the form below. Be sure to check out my <a href="https://github.com/catsinspacesuits" class="form-link" target="_blank"><span>Github</span></a>, <a href="https://www.linkedin.com/in/scottimunro/" class="form-link" target="_blank"><span>LinkedIn</span></a> and <a href="Munro_Scott_Resume.pdf" target="_blank" class="form-link" download><span>Resume</span></a> accounts too!<br><br>
+			<p>Email me directly at <strong>scott (dot) ian (dot) munro (at) gmail (dot) com</strong> or fill out the form below. Be sure to check out my <a href="https://github.com/catsinspacesuits" class="form-link" target="_blank"><span>Github</span></a> and <a href="https://www.linkedin.com/in/scottimunro/" class="form-link" target="_blank"><span>LinkedIn</span></a> accounts and <a href="Munro_Scott_Resume.pdf" target="_blank" class="form-link" download><span>Resume</span></a> too!<br><br>
 			You can also contact me by phone at:<br><strong>+49 1590 2140293</strong></p>
 			<form action="https://formspree.io/simunro@hotmail.co.uk" method="POST">
 		    <label>Name: </label>

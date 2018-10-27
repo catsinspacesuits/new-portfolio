@@ -295,7 +295,7 @@ header {
 	display: inline-block;
 	text-align: center;
 	list-style-type: none;
-	padding: 3%;
+	padding: 5px;
 	margin: 0.3rem;
 	border: 1px solid black;
 	border-radius: 5px;
@@ -303,8 +303,8 @@ header {
 
 .about-section-divider {
 	border: 1px solid black;
-	width: 15%;
-	margin: 0 auto;
+	width: 8rem;
+	margin: 0 auto 4rem auto;
 } 
 
 .responsive { /*to make images responsive*/
@@ -321,7 +321,6 @@ header {
 
 .projects-color h2 {
 	text-align: center;
-	padding: 5rem 0 1.6rem 0;
 	font-size: 3rem;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -329,8 +328,8 @@ header {
 
 .projects-section-divider {
 	border: 1px solid black;
-	width: 10%;
-	margin: 0 auto;
+	width: 12rem;
+	margin: 3rem auto;
 } 
 
 .projects-container {
@@ -370,6 +369,7 @@ header {
 	border: 1px solid black;
 	margin: 3% auto;
 	opacity: 1;
+	cursor: pointer;
 }
 
 .project-icons {
@@ -412,7 +412,6 @@ header {
 
 .project-one {
 	background-image: url(img/books.png);
-	cursor: pointer;
 }
 
 .project-two {
@@ -693,7 +692,7 @@ footer li {
 
 @media only screen and (max-width: 950px) {
 		html {
-			font-size: 13px;
+			font-size: 11px;
 		}
 		.container {
 			width: 100%;
@@ -706,6 +705,9 @@ footer li {
     #contact-container {
     	width: 100%;
     }   
+    input, textarea {
+    	width: 90%;
+    }
     .projects-container {
     	width: 100%;
     }
@@ -729,21 +731,18 @@ footer li {
     .header-title h1 {
     	font-size: 1.5rem;
     }
-    
     #home-link {
     	display: none;
     }
-
     #contact-container {
     	box-shadow: none;
     }
-
     #contact-header {
     	height: 120px;
     	margin-bottom: 25px;
     }
 
-    /*JUMBO*/
+    /*JUMBOTRON*/
 
     #sun {
     	width: 2.5em;
@@ -759,17 +758,17 @@ footer li {
     	object-fit: cover;
     }
   	#layer-one {
-  		top: -9vh;
+  		top: -19vh;
   	}
   	#layer-two {
-  		top: 1vh;
-  		height: 70vh;
+  		top: -1vh;
+  		height: 90vh;
   	}
   	#layer-three {
-  		top: -6vh;
+  		top: -16vh;
   	}
   	#layer-four {
-  		top: 1rem;
+  		top: 12vh;
   		height: 70vh;
   	}
   
