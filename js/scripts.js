@@ -55,7 +55,6 @@ $(document).ready(function () {
 
 // JS for tooltips
 
-
 var Tooltip = {
   init: function() {
     // create links array
@@ -93,7 +92,7 @@ window.addEventListener("load", Tooltip.init);
 
 // JS for modal window
 
-// Open modal windows
+// OPEN MODAL WINDOWS
 
 document.querySelectorAll('.modal-btn').forEach(function(item){  
   item.addEventListener('click', 
@@ -104,7 +103,7 @@ document.querySelectorAll('.modal-btn').forEach(function(item){
   });
 })
 
-// Close modal windows
+// CLOSE MODAL WINDOWS
 
 document.querySelectorAll('.close-box').forEach(function(item){  
   item.addEventListener('click', 

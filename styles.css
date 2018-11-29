@@ -1,13 +1,14 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 @font-face { 
 	font-family: Gotham-Book; 
 	src: url('fonts/GothamBook.ttf'); 
-} 
+}
 
 body {
 	font-family: Gotham-Book, Arial, sans-serif;
@@ -101,7 +102,7 @@ h2 {
 	letter-spacing: 0.1rem;
 }
 
-/*PARALLAX JUMBO*/
+/*PARALLAX JUMBOTRON*/
 
 header {
 	width: 100%;
@@ -114,7 +115,7 @@ header {
   width: 100%;
 	height: 100vh;
 	z-index: 1;
-}
+}	
 
 .layer {
 	left: 0;
@@ -154,8 +155,10 @@ header {
 	width: 50px;
 	height: 50px;
 	background-color: #FFD03F;
-	box-shadow: 0 0 40px 20px #FFD03F;	
-	animation: sunrise 5s 2s ease-out forwards;
+	-webkit-box-shadow: 0 0 40px 20px #FFD03F;
+	        box-shadow: 0 0 40px 20px #FFD03F;	
+	-webkit-animation: sunrise 5s 2s ease-out forwards;	
+	        animation: sunrise 5s 2s ease-out forwards;
 }
 
 #sky {
@@ -163,8 +166,10 @@ header {
 	z-index: -6;
 	width: 100%;
 	height: 600px;
+	background: -o-linear-gradient(280deg, black, #FFD03F);
 	background: linear-gradient(170deg, black, #FFD03F);
-	animation: sky 6s 2s ease-out forwards;
+	-webkit-animation: sky 6s 2s ease-out forwards;
+	        animation: sky 6s 2s ease-out forwards;
 }
 
 /*TITLE*/
@@ -176,7 +181,8 @@ header {
 	float: left;
 	z-index: 1;
 	text-align: center;
-	animation: fade 5s forwards;
+	-webkit-animation: fade 5s forwards;
+	        animation: fade 5s forwards;
 	color: rgba(255, 255, 255, 0.9);
 	text-transform: uppercase;
 	letter-spacing: 0.7rem;
@@ -262,9 +268,15 @@ header {
 }
 
 .resume-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	width: 100%;
 	height: 200px;
 	background-image: url(img/background.jpg);
@@ -282,6 +294,8 @@ header {
 	color: black;
 	font-weight: 900;
 	text-transform: uppercase;
+	-webkit-transition: 700ms;
+	-o-transition: 700ms;
 	transition: 700ms;
 }
 
@@ -346,7 +360,8 @@ header {
 	margin: 4.5%;
 	text-align: left;
 	font-size: 0.9rem;
-	box-shadow: 0 0 5rem #b7b7b7;
+	-webkit-box-shadow: 0 0 5rem #b7b7b7;
+	        box-shadow: 0 0 5rem #b7b7b7;
 	background-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -357,8 +372,9 @@ header {
 
 .project-description {
 	font-size: 1rem;
-	padding: 22px;
+	padding: 12px;
 	line-height: 1.35;
+	text-align: center;
 }
 
 .project-image {
@@ -390,9 +406,12 @@ header {
 	padding: 7px;
 	margin: 1.5%;
 	border-radius: 4px;
-	box-shadow: 3px 3px 10px grey;
+	-webkit-box-shadow: 3px 3px 10px grey;
+	        box-shadow: 3px 3px 10px grey;
 	background-color: #eff;
 	cursor: pointer;
+	-webkit-transition: 0.6s;
+	-o-transition: 0.6s;
 	transition: 0.6s;
 }
 
@@ -416,6 +435,10 @@ header {
 
 .project-two {
 	background-image: url(img/portfolio.jpg);
+}
+
+.project-three {
+	background-image: url(img/order-tracker.jpg);
 }
 
 .project-four {
@@ -480,8 +503,12 @@ header {
 	right: 10px;
 	top: 0;
 	font-size: 40px;
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	        -ms-transform: rotate(45deg);
+	    transform: rotate(45deg);
 	cursor: pointer;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
 	transition: 0.2s;
 }
 
@@ -532,7 +559,8 @@ header {
 } 
 
 #contact-container {
-	box-shadow: 0 0 50px #555555;
+	-webkit-box-shadow: 0 0 50px #555555;
+	        box-shadow: 0 0 50px #555555;
 }
 
 #contact-container p {
@@ -590,7 +618,10 @@ input, textarea {
 	font-weight: 700;
 	background-color: white;
 	text-transform: uppercase;
-	box-shadow: 2px 2px 8px grey;
+	-webkit-box-shadow: 2px 2px 8px grey;
+	        box-shadow: 2px 2px 8px grey;
+	-webkit-transition: 700ms;
+	-o-transition: 700ms;
 	transition: 700ms;
 }
 
@@ -644,14 +675,29 @@ footer li {
 
 /*KEYFRAMES*/
 
+@-webkit-keyframes sky {
+    from {top: 10px;}
+    to {top: -180px;}
+}
+
 @keyframes sky {
     from {top: 10px;}
     to {top: -180px;}
 }
 
+@-webkit-keyframes sunrise {
+    from {top: 450px;}
+    to {top: 265px;}
+}
+
 @keyframes sunrise {
     from {top: 450px;}
     to {top: 265px;}
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 @keyframes fade {
@@ -735,7 +781,8 @@ footer li {
     	display: none;
     }
     #contact-container {
-    	box-shadow: none;
+    	-webkit-box-shadow: none;
+    	        box-shadow: none;
     }
     #contact-header {
     	height: 120px;
@@ -748,6 +795,10 @@ footer li {
     	width: 2.5em;
     	height: 2.5em;
     }
+    @-webkit-keyframes sunrise {
+        from {top: 370px;}
+        to {top: 240px;}
+      }
     @keyframes sunrise {
         from {top: 370px;}
         to {top: 240px;}
@@ -755,7 +806,8 @@ footer li {
     .layer {
     	width: 100vw;
     	height: 100vh;
-    	object-fit: cover;
+    	-o-object-fit: cover;
+    	   object-fit: cover;
     }
   	#layer-one {
   		top: -19vh;
@@ -823,4 +875,4 @@ footer li {
 	.modal-text {
 		font-size: 0.8rem;
 	}
-}
+}}
