@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Scott Munro | Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Pavanam&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -54,7 +54,7 @@
 	    	<div class="skill-list">
 		      <h3>Skills</h3>  
 		      <ul>
-		      	<li>Full Stack Web Development</li>
+		      	<li>Web Development</li>
 		      	<li>Obeject-Oriented Programming</li>
 		        <li>Responsive Web Design</li>
 		        <li>Version Control (Git)</li>
@@ -64,16 +64,15 @@
 	      <div class="skill-list">
 		      <h3>Technologies</h3>  
 		      <ul>
-		        <li>HTML5</li>  
-		        <li>CSS3</li>
-		        <li>SASS</li>
-		        <li>Bootstrap</li>
-		        <li>Flexbox</li>
+		        <li>Ruby</li>  
+		        <li>Rails</li>
+            <li>RSpec</li>
 		        <li>JavaScript</li>
-		        <li>jQuery</li>
-		        <li>Ruby</li>
-		        <li>Rails</li> 
+            <li>CSS3</li>
+		        <li>Bootstrap</li>
+		        <li>SASS</li>
 		        <li>Heroku</li>
+		        <li>Linux OS</li>
 		      </ul>
 	    	</div>
 	    </div>
@@ -120,6 +119,36 @@
   		  	<div class="project-icons">
   			  	<a href="https://github.com/catsinspacesuits/Order-Tracker" target="_blank"><button class="project-btn">Source Code</button></a>
   			  	<a href="https://courier-tracking-app.herokuapp.com/" target="_blank"><button class="project-btn">Visit Site</button></a>
+  		  	</div> 
+		  	</div> 
+		  </div> <!-- end of modal -->
+
+		  <div class="project">
+		  	<h3>The Weather in GIFs</h3>
+		  	<div class="project-image project-five modal-btn" data-modal="#modal5"></div>
+		  	<p class="project-description">This site lets users check the current weather forecast in any city and you will be returned a GIF that matches the weather. Uses the Open Weather Map API.</p>
+  	  	<div class="project-icons">
+  		  	<a href="https://github.com/catsinspacesuits/weather-app" target="_blank"><button class="project-btn">Source Code</button></a>
+  		  	<button class="project-btn modal-btn" data-modal="#modal5">More Details</button>
+  		  	<a href="https://weather-in-gifs.herokuapp.com/" target="_blank"><button class="project-btn">Visit Site</button></a>
+  	  	</div>
+		  </div>
+		  <div class="modal" id="modal5"><!-- Modal for projects windows -->
+		  	<div class="modal-box">
+		  		<span class="close-box" data-modal="#modal5">+</span>
+		  		<h3>The Weather in GIFs</h3>
+		  		<h4>Product Features</h4>
+		  		<ul class="product-features"><i>
+		  			<li>Ruby on Rails</li>
+		  			<li>CSS3</li>
+		  			<li>Open Weather Map API</li>
+		  			<li>HTTParty gem</li>
+		  			<li>RSpec</li></i>			
+		  		</ul>
+		  		<p class="modal-text"> This app allows users to search for a city/town and the weather forecast is returned to them in the form of a GIF that represents the current weather. Temperature, wind speed and humidity are returned as well as a brief weather decription of the weather. Weather parameters are fetched from the Open Weather Map API using thre HTTParty gem to contact the API. CSS keyframes are used to animate the weather parameters. </p>
+  		  	<div class="project-icons">
+  			  	<a href="https://github.com/catsinspacesuits/weather-app" target="_blank"><button class="project-btn">Source Code</button></a>
+  			  	<a href="https://weather-in-gifs.herokuapp.com/" target="_blank"><button class="project-btn">Visit Site</button></a>
   		  	</div> 
 		  	</div> 
 		  </div> <!-- end of modal -->

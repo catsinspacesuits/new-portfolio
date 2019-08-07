@@ -5,13 +5,8 @@
 	        box-sizing: border-box;
 }
 
-@font-face { 
-	font-family: Gotham-Book; 
-	src: url('fonts/GothamBook.ttf'); 
-}
-
 body {
-	font-family: Gotham-Book, Arial, sans-serif;
+	font-family: 'Pavanam', Arial, sans-serif;
 	font-size: 1rem;
 	z-index: -99;
 }
@@ -90,7 +85,7 @@ h2 {
 	position: absolute;
 	right: 2.6rem;
 	top: 3.3rem;
-	font-family: Gotham-Book, Arial, sans-serif;
+	font-family: 'Pavanam', Arial, sans-serif;
 	border: 2px solid #333;
 	color: #333;
 	border-radius: 5px;
@@ -445,6 +440,10 @@ header {
 	background-image: url(img/todo.png);
 }
 
+.project-five {
+	background-image: url(img/weathr_gifs.png);
+}
+
 .clearfix {
 	clear: both;
 }
@@ -504,8 +503,8 @@ header {
 	top: 0;
 	font-size: 40px;
 	-webkit-transform: rotate(45deg);
-	        -ms-transform: rotate(45deg);
-	    transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 	cursor: pointer;
 	-webkit-transition: 0.2s;
 	-o-transition: 0.2s;
@@ -610,7 +609,7 @@ input, textarea {
 	border: 1px solid black;
 	text-decoration: none;
 	font-size: 0.8rem;
-	font-family: Gotham-Book, Arial, sans-serif;
+	font-family: 'Pavanam', Arial, sans-serif;
 	letter-spacing: 0.3rem;
 	padding: 15px 26px;
 	margin: 35px;
